@@ -1,0 +1,236 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+a{
+  text-decoration: none !important;  
+  color:#fff !important;
+}
+html{
+    min-height:100vh;
+}
+body{
+    min-width:100%;
+    min-height:100vh;
+   margin: 0;
+   padding: 0;
+   font-family: Roboto Light;
+   overflow-x:hidden !important;
+   background: rgba(229, 237, 240, 1) !important;
+   object-fit:contain !important;
+}
+
+
+.navbar{
+    background:hsla(202, 93%, 35%, 1);
+    width:100%;
+    height: auto;
+    padding:14px;
+    color:#fff;
+}
+
+
+.preloder{
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:0px;
+    left:0px;
+    margin:0px;
+    background: linear-gradient(125deg, rgb(106, 184, 233) 10%,rgb(22, 145, 216) 100%);
+    display:flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.preloder .inner-a{
+    width:150px;
+    height:150px;
+    background:rgb(13, 132, 201) ;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:150px auto;
+}
+.preloder .inner-b{
+    width:95px;
+    height:95px;
+    background:rgb(65, 169, 230) ;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.preloder .inner-c a{
+    width:46px;
+    height:46px;
+    background:rgb(5, 49, 75) ;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:#fff;
+    font-family:roboto light;
+    font-weight:700;
+        text-decoration: none !important;
+}
+.preloder h3{
+    padding-left:10px;
+    color:#fff !important;
+    font-family:verdana;
+    text-align:center;
+    position: absolute;
+    left:50%;
+    font-size:20px;
+    bottom:8em;
+    transform: translate(-50%, -50%);
+    margin:0px auto;
+    width:100%;
+}
+
+.search{
+    background:none !important;
+    /* background:url('../icon/magnifying-glass.png'); */
+    background-position:start;
+    background-size: contain;
+    outline:0px;
+    border-radius:0px !important;
+    object-fit:cover;
+    background-repeat:no-repeat;
+    border:none !important;
+    border-bottom: 2px solid #fff !important;
+    width:120px;
+    color:#fff !important;
+}
+.search::placeholder{
+    text-indent: 50px;
+    color:#fff !important;
+}
+.search:focus{
+    border:0px !important;
+    outline: 0px !important;
+}
+
+.section{
+    position:relative;
+    top:3em;
+    margin:0px;
+    width:100%;
+    height:auto !important;
+    padding:12px;
+}
+.section .addbtn{
+    position: fixed;
+    width:50px;
+    height:50px;
+    background:rgb(65, 169, 230) ;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:#fff !important;
+    left:90%;
+    bottom:0%;
+    z-index:5;
+    transform: translate(-50%,-50%);
+    border:2px solid rgb(58, 141, 189);
+}
+.search .addbtn a{
+    font-family:roboto light;
+    font-weight:700;
+    text-decoration: none !important;
+    color:white !important;
+}
+
+.section .boxes{
+    display:table;
+    clear:both;
+    margin-top:50px !important;
+    width:100%;
+    height:auto;
+}
+.section .boxes .box{
+    width:300px;
+    height:auto;
+    background:#fff;
+    overflow:hidden;
+    float:left;
+    padding:10px;
+    margin:12px;
+}
+.section .boxes .box .body{
+    overflow: hidden;
+}
+.section .boxes .box .clear-fix{
+    margin-top:5%;
+}
+
+.section .boxes .box .del{
+    padding:2px;
+    width:32px;
+    margin-bottom:30px !important;
+}
+.section .boxes .box .del img{
+    width:20px;
+}
+
+@media(max-width:600px){
+    .section .boxes .box{
+    width:250px !important;
+    height:auto;
+    background:#fff;
+    overflow:hidden;
+    float:left;
+    clear:both;
+    padding:10px;
+    }
+    .section .boxes{
+    margin:0px auto;
+    }
+    .navbar .addcont{
+        position: relative !important;
+        left:10em;
+    }
+.section .addbtn{
+    position: fixed;
+    width:50px;
+    height:50px;
+    background:rgb(65, 169, 230) ;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    color:#fff !important;
+    left:60%;
+    bottom:30%;
+    z-index:5;
+    transform: translate(-50%,-50%);
+    border:2px solid rgb(58, 141, 189);
+}
+
+    .addnote{
+        width:250px !important;
+        height:50vh !important;
+    }
+    
+}
+
+.addnote{
+    position:relative;
+    top:10em;
+    margin:0px auto;
+    width:100%;
+    height:50vh !important;
+    padding:12px;
+    width:300px;
+    background:#fff;
+    box-shadow:0px 0px 3px #000;
+
+}
+
